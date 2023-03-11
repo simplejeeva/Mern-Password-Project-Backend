@@ -10,6 +10,9 @@ const passwordResetRoutes = require("./routes/passwordReset.js");
 //database connectiom
 connection();
 
+app.get("/", function (request, response) {
+  response.send("<h1>🎉✨WELCOME TO MY PASSWORD API🎉✨<h1>");
+});
 // middlewares
 app.use(express.json());
 app.use(cors());
